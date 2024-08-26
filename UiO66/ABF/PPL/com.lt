@@ -1,0 +1,11 @@
+import "uio.lt"
+import "ppl.lt"
+
+# Periodic boundary conditions:
+wat1 = new uio
+wat = new ppl.move(15,15,5)
+write_once("Data Boundary") {
+   0.0  41.4  xlo xhi
+   0.0  41.4  ylo yhi
+   0.0  41.4  zlo zhi
+}

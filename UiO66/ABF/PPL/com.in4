@@ -1,0 +1,42 @@
+
+
+# ----------------- Init Section -----------------
+
+include "com.in.init"
+
+
+# ----------------- Atom Definition Section -----------------
+
+read_data "com5.data"
+
+# ----------------- Settings Section -----------------
+
+include "com.in.settings"
+
+variable	out_freq equal 10000 # Thermo output frequency
+
+group  fram1  id  1
+group  fram  id  2:3470
+# ----------------- Run Section -----------------
+timestep        1
+thermo          ${out_freq}
+thermo_style 	custom step temp pe ke etotal press lx ly lz xy xz yz
+restart 	${out_freq} restart restart1
+# Perform minimization
+minimize 1.0e-4 1.0e-6 1000 10000
+
+#Assign velocity
+velocity all create 300 23456
+velocity all zero linear
+
+#Compute NVT at 1000K
+fix      1  fram nvt temp 300 300 100
+ 
+fix        ssages all ssages
+
+# dump            1 all dcd 10000 out.dcd
+# dump_modify     1 unwrap no
+ 
+run   200000000
+#  ---- (end of examples) ----
+
