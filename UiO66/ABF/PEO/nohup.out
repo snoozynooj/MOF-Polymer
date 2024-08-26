@@ -1,0 +1,20 @@
+Input file is :
+ F_out 
+ and output file is : 
+ G
+CV1 periodicity is set to 
+ True  
+
+CV2 periodicity is set to (if it exists) 
+ True  
+
+CV3 periodicity is set to (if it exists) 
+ True  
+
+Free energy will be interpolated with 
+ [200, 200, 200] 
+ points 
+
+Free energy will be plotted with 
+ 5 
+ contours
