@@ -1,0 +1,41 @@
+{
+	"logger" :
+	{
+		"output_file" : ["node-0", "node-1", "node-2", "node-3", "node-4","node-5", "node-6", "node-7", "node-8", "node-9"],
+        "frequency" : 10000
+	},
+	"walkers" : 10,
+	"input" : ["com.in","com.in1","com.in2","com.in3","com.in4","com.in5","com.in6","com.in7","com.in8","com.in9"],
+	"CVs":
+	[{
+		"type" : "ParticleCoordinate",
+		"atom_ids" : [3457, 3458, 3459, 3460, 3461, 3462, 3463, 3464, 3465, 3466, 3467, 3468],
+        "dimension" : "z"
+    },
+    {
+		"type" : "ParticleCoordinate",
+		"atom_ids" : [3457, 3458, 3459, 3460, 3461, 3462, 3463, 3464, 3465, 3466, 3467, 3468],
+        "dimension" : "y"
+	}],
+	"methods" :
+	[{
+		"type" : "ABF",
+		"cvs" : [0,1],
+        "restart" : true,
+		"CV_lower_bounds" : [0.0,0.0],
+		"CV_upper_bounds" : [41.4,41.4],
+		"CV_bins" : [200,200],
+		"CV_restraint_minimums" : [-0.3,-0.3],
+		"CV_restraint_maximums" : [41.7,41.7],
+		"CV_restraint_spring_constants" : [0,0],
+        "CV_isperiodic" : [true,true],
+        "CV_periodic_boundary_lower_bounds" : [0, 0],
+        "CV_periodic_boundary_upper_bounds" : [41.4, 41.4],
+		"timestep" : 1,
+		"minimum_count" : 400,
+		"output_file" : "F_out",
+		"output_frequency" : 1000,
+		"unit_conversion" : 2390.06,
+		"frequency" : 1
+	}]
+}
