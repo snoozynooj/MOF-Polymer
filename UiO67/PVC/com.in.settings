@@ -1,0 +1,37 @@
+    pair_coeff 1 1 0.069000 2.783168
+    pair_coeff 2 2 0.060000 3.118146
+    pair_coeff 3 3 0.060000 3.118146
+    pair_coeff 4 4 0.105000 3.430851
+    pair_coeff 5 5 0.044000 2.571134
+    bond_coeff 1 308.999548 2.084967
+    bond_coeff 2 291.001389 2.127094
+    bond_coeff 3 646.680887 1.311940
+    bond_coeff 4 391.669513 1.458000
+    bond_coeff 5 462.655054 1.379256
+    bond_coeff 6 357.440381 1.081418
+    angle_coeff 1 fourier 118.687092 0.343737 0.374972 0.281246
+    angle_coeff 2 fourier 115.139800 0.343737 0.374972 0.281246
+    angle_coeff 3 fourier 111.773978 0.343737 0.374972 0.281246
+    angle_coeff 4 cosine/periodic 118.513834 -1 3
+    angle_coeff 5 cosine/periodic 124.830884 -1 3
+    angle_coeff 6 cosine/periodic 187.136328 -1 3
+    angle_coeff 7 cosine/periodic 131.755710 -1 3
+    angle_coeff 8 cosine/periodic 102.183280 -1 3
+    angle_coeff 9 cosine/periodic 111.297508 -1 3
+    angle_coeff 10 cosine/periodic 57.289016 -1 3
+    dihedral_coeff 1 6.737110 -1 2
+    dihedral_coeff 2 1.250000 -1 2
+    dihedral_coeff 3 3.368555 -1 2
+    improper_coeff 1 2.000000 1.000000 -1.000000 0.000000 0
+    pair_coeff 6 6 0.105000 3.430851
+    pair_coeff 7 7 0.044000 2.571134
+    pair_coeff 8 8 0.227000 3.516377
+    bond_coeff 7 349.795899 1.514000
+    bond_coeff 8 331.069389 1.109401
+    bond_coeff 9 265.227108 1.777985
+    angle_coeff 11 fourier 214.211821 0.343737 0.374972 0.281246
+    angle_coeff 12 fourier 117.318683 0.343737 0.374972 0.281246
+    angle_coeff 13 fourier 202.261405 0.343737 0.374972 0.281246
+    angle_coeff 14 fourier 102.204571 0.343737 0.374972 0.281246
+    angle_coeff 15 fourier 75.498766 0.343737 0.374972 0.281246
+    dihedral_coeff 4 0.117722 1 3

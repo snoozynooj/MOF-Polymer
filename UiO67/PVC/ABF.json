@@ -1,0 +1,41 @@
+{
+	"logger" :
+	{
+		"output_file" : ["node-0","node-1","node-2", "node-3", "node-4"],
+        "frequency" : 10000
+	},
+	"walkers" : 5,
+	"input" : ["com.in", "com.in1", "com.in2", "com.in3", "com.in4"],
+	"CVs":
+	[{
+		"type" : "ParticleCoordinate",
+		"atom_ids" : [5441,5442,5443,5444,5445,5446,5447,5448,5449,5450,5451],
+        "dimension" : "z"
+    },
+    {
+		"type" : "ParticleCoordinate",
+		"atom_ids" : [5441,5442,5443,5444,5445,5446,5447,5448,5449,5450,5451],
+        "dimension" : "y"
+	}],
+	"methods" :
+	[{
+		"type" : "ABF",
+		"cvs" : [0,1],
+        "restart": true,
+		"CV_lower_bounds" : [0.0,0.0],
+		"CV_upper_bounds" : [53.792000,53.792000],
+		"CV_bins" : [270,270],
+		"CV_restraint_minimums" : [-0.2,-0.2],
+		"CV_restraint_maximums" : [53.792,53.792],
+		"CV_restraint_spring_constants" : [0,0],
+        "CV_isperiodic" : [true,true],
+        "CV_periodic_boundary_lower_bounds" : [0, 0],
+        "CV_periodic_boundary_upper_bounds" : [53.792000, 53.792000],
+		"timestep" : 1,
+		"minimum_count" : 400,
+		"output_file" : "F_out",
+		"output_frequency" : 1000,
+		"unit_conversion" : 2390.06,
+		"frequency" : 1
+	}]
+}

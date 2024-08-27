@@ -1,0 +1,12 @@
+import "uio67.lt"
+import "pvc.lt"
+
+# Periodic boundary conditions:
+wat1 = new uio67
+wat = new pvc
+
+write_once("Data Boundary") {
+   0.0  53.792000  xlo xhi
+   0.0  53.792000  ylo yhi
+   0.0  53.792000  zlo zhi
+}
